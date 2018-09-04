@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180904 17:47:17.551" generator="Robot 3.0.4 (Python 2.7.12 on linux2)">
+<suite source="/home/himanshu/uniclair_automation/resource/Git.robot" id="s1" name="Git">
+<test id="s1-t1" name="Git Visibility:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:47:18.079" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:47:31.788" starttime="20180904 17:47:18.078"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:47:31.789" starttime="20180904 17:47:18.077"></status>
+</kw>
+<kw name="Validate Git visibility" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:47:31.791" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:47:33.120" starttime="20180904 17:47:31.790"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:47:33.120" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:47:33.406" starttime="20180904 17:47:33.120"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:47:33.407" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:47:36.501" starttime="20180904 17:47:33.406"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:47:46.503" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:47:46.503" starttime="20180904 17:47:36.501"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:47:46.504" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:47:46.629" starttime="20180904 17:47:46.503"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:47:51.630" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:47:51.630" starttime="20180904 17:47:46.629"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180904 17:47:51.631" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:47:53.133" starttime="20180904 17:47:51.631"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:47:53.134" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:48:01.905" starttime="20180904 17:47:53.134"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20180904 17:48:21.906" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20180904 17:48:21.906" starttime="20180904 17:48:01.905"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:48:21.907" starttime="20180904 17:47:31.789"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:48:21.909" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:48:23.391" starttime="20180904 17:48:21.908"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:48:23.391" starttime="20180904 17:48:21.908"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:48:23.485" starttime="20180904 17:48:23.392"></status>
+</kw>
+<doc>This test case objective to validate the
+Git visibility inside a existing project.</doc>
+<status status="PASS" endtime="20180904 17:48:23.486" critical="yes" starttime="20180904 17:47:18.075"></status>
+</test>
+<test id="s1-t2" name="Git Fields:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:48:23.491" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:48:37.858" starttime="20180904 17:48:23.490"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:48:37.858" starttime="20180904 17:48:23.490"></status>
+</kw>
+<kw name="Validate Git Fields" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:48:37.861" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:48:39.191" starttime="20180904 17:48:37.860"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:48:39.192" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:48:39.470" starttime="20180904 17:48:39.191"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:48:39.471" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:48:44.219" starttime="20180904 17:48:39.471"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:48:54.221" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:48:54.222" starttime="20180904 17:48:44.220"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:48:54.223" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:48:54.362" starttime="20180904 17:48:54.222"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:48:59.363" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:48:59.363" starttime="20180904 17:48:54.362"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180904 17:48:59.365" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:49:01.382" starttime="20180904 17:48:59.364"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:01.383" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:49:07.953" starttime="20180904 17:49:01.382"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:49:09.955" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:49:09.955" starttime="20180904 17:49:07.954"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Gitrepolist}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:09.956" level="INFO">Clicking element 'xpath=//a[contains(text(),'Repository list')]'.</msg>
+<status status="PASS" endtime="20180904 17:49:11.963" starttime="20180904 17:49:09.955"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:49:16.965" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:49:16.965" starttime="20180904 17:49:11.963"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GitFork}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:16.967" level="INFO">Clicking element 'xpath=//a[contains(text(),'Fork repositories')]'.</msg>
+<status status="PASS" endtime="20180904 17:49:18.414" starttime="20180904 17:49:16.966"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:49:23.415" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:49:23.415" starttime="20180904 17:49:18.414"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Gitadmin}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:23.416" level="INFO">Clicking element 'XPATH=//a[contains(text(),'Admin')]'.</msg>
+<status status="PASS" endtime="20180904 17:49:24.846" starttime="20180904 17:49:23.416"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:49:29.847" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:49:29.847" starttime="20180904 17:49:24.846"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:49:29.848" starttime="20180904 17:48:37.859"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:29.850" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:49:30.934" starttime="20180904 17:49:29.849"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:49:30.934" starttime="20180904 17:49:29.848"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:49:31.014" starttime="20180904 17:49:30.935"></status>
+</kw>
+<doc>This test case validate the Git fields.</doc>
+<status status="PASS" endtime="20180904 17:49:31.014" critical="yes" starttime="20180904 17:48:23.488"></status>
+</test>
+<test id="s1-t3" name="Git add:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:31.017" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:49:44.205" starttime="20180904 17:49:31.017"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:49:44.206" starttime="20180904 17:49:31.016"></status>
+</kw>
+<kw name="Validate Git add" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:44.210" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:49:45.557" starttime="20180904 17:49:44.209"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:45.558" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:49:45.828" starttime="20180904 17:49:45.557"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:45.828" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:49:48.947" starttime="20180904 17:49:45.828"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180904 17:49:49.948" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180904 17:49:49.948" starttime="20180904 17:49:48.947"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:49.949" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:49:50.088" starttime="20180904 17:49:49.949"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:50.089" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:49:51.963" starttime="20180904 17:49:50.089"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:51.964" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:49:59.465" starttime="20180904 17:49:51.963"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${Reponame}</arg>
+<arg>${directory}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:59.466" level="INFO">Typing text 'RobotTest2' into text field 'xpath=//input[@id='repo_name']'</msg>
+<status status="PASS" endtime="20180904 17:49:59.942" starttime="20180904 17:49:59.465"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Create}</arg>
+</arguments>
+<msg timestamp="20180904 17:49:59.943" level="INFO">Clicking element 'xpath=//input[@id='repo_add']'.</msg>
+<status status="PASS" endtime="20180904 17:50:02.033" starttime="20180904 17:49:59.943"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:50:02.033" starttime="20180904 17:49:44.209"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:02.035" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:50:03.790" starttime="20180904 17:50:02.035"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:50:03.790" starttime="20180904 17:50:02.034"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:50:03.857" starttime="20180904 17:50:03.791"></status>
+</kw>
+<doc>This test case objective to validate
+Git repo add functionality.</doc>
+<status status="PASS" endtime="20180904 17:50:03.857" critical="yes" starttime="20180904 17:49:31.015"></status>
+</test>
+<test id="s1-t4" name="Add git fork:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:03.864" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:50:17.095" starttime="20180904 17:50:03.863"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:50:17.095" starttime="20180904 17:50:03.861"></status>
+</kw>
+<kw name="Validate to add git fork" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:17.107" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:50:18.480" starttime="20180904 17:50:17.103"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:18.481" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:50:18.760" starttime="20180904 17:50:18.480"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:18.761" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:50:21.909" starttime="20180904 17:50:18.760"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:50:31.911" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:50:31.911" starttime="20180904 17:50:21.910"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:31.912" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:50:32.090" starttime="20180904 17:50:31.911"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:50:37.092" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:50:37.093" starttime="20180904 17:50:32.091"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:37.093" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:50:39.370" starttime="20180904 17:50:37.093"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:39.370" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:50:46.883" starttime="20180904 17:50:39.370"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Fork_repo}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:46.884" level="INFO">Clicking element 'xpath=//a[contains(text(),'Fork repositories')]'.</msg>
+<status status="PASS" endtime="20180904 17:50:49.219" starttime="20180904 17:50:46.883"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${repo_to_fork}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:49.220" level="INFO">Clicking element 'xpath=//tr//td[1]//option[3]'.</msg>
+<status status="PASS" endtime="20180904 17:50:49.441" starttime="20180904 17:50:49.220"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${fork_button}</arg>
+</arguments>
+<msg timestamp="20180904 17:50:49.442" level="INFO">Clicking element 'xpath=//input[@value='Fork repositories']'.</msg>
+<status status="PASS" endtime="20180904 17:50:51.234" starttime="20180904 17:50:49.441"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:51:01.235" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:51:01.236" starttime="20180904 17:50:51.235"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${final_fork_button}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:01.237" level="INFO">Clicking element 'xpath=//input[@value='Fork repositories']'.</msg>
+<status status="PASS" endtime="20180904 17:51:03.109" starttime="20180904 17:51:01.236"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:51:05.121" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:51:05.138" starttime="20180904 17:51:03.109"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:51:05.161" starttime="20180904 17:50:17.100"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:05.172" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:51:06.617" starttime="20180904 17:51:05.169"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:51:06.617" starttime="20180904 17:51:05.162"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:51:06.695" starttime="20180904 17:51:06.618"></status>
+</kw>
+<doc>This test objective is to validate git fork
+repo of an existing Git repo.</doc>
+<status status="PASS" endtime="20180904 17:51:06.696" critical="yes" starttime="20180904 17:50:03.859"></status>
+</test>
+<test id="s1-t5" name="Delete git fork:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:06.704" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:51:21.294" starttime="20180904 17:51:06.703"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:51:21.294" starttime="20180904 17:51:06.702"></status>
+</kw>
+<kw name="Validate to delete git fork" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:21.300" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:51:22.644" starttime="20180904 17:51:21.299"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:22.645" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:51:22.917" starttime="20180904 17:51:22.644"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:22.918" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:51:26.812" starttime="20180904 17:51:22.917"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:51:36.819" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:51:36.819" starttime="20180904 17:51:26.813"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:36.820" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:51:37.023" starttime="20180904 17:51:36.819"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:51:42.024" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:51:42.024" starttime="20180904 17:51:37.023"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:42.025" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:51:48.818" starttime="20180904 17:51:42.025"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:48.820" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:51:57.067" starttime="20180904 17:51:48.819"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Select-fork}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:57.069" level="INFO">Clicking element 'xpath=//select[@name='user']/option[@value='103']'.</msg>
+<status status="PASS" endtime="20180904 17:51:58.891" starttime="20180904 17:51:57.067"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${fork_repo_to_del}</arg>
+</arguments>
+<msg timestamp="20180904 17:51:58.892" level="INFO">Clicking element 'xpath=//a[contains(text(),'RobotTest')]'.</msg>
+<status status="PASS" endtime="20180904 17:52:02.450" starttime="20180904 17:51:58.892"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_setting}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:02.451" level="INFO">Clicking element 'xpath=//a[@class='btn plugin_git_admin_button']'.</msg>
+<status status="PASS" endtime="20180904 17:52:04.004" starttime="20180904 17:52:02.450"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_del}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:04.005" level="INFO">Clicking element 'xpath=//a[@title='Delete']'.</msg>
+<status status="PASS" endtime="20180904 17:52:05.811" starttime="20180904 17:52:04.004"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_final_del}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:05.812" level="INFO">Clicking element 'xpath=//input[@value='Delete this repository']'.</msg>
+<status status="PASS" endtime="20180904 17:52:08.206" starttime="20180904 17:52:05.812"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:52:10.207" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:52:10.208" starttime="20180904 17:52:08.206"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:52:10.208" starttime="20180904 17:51:21.297"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:10.210" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:52:12.099" starttime="20180904 17:52:10.210"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:52:12.099" starttime="20180904 17:52:10.209"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:52:12.169" starttime="20180904 17:52:12.100"></status>
+</kw>
+<doc>This test case objective to valiodate
+the deletion of an existing git fork repo.</doc>
+<status status="PASS" endtime="20180904 17:52:12.170" critical="yes" starttime="20180904 17:51:06.700"></status>
+</test>
+<test id="s1-t6" name="Git delete:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:12.177" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:52:32.766" starttime="20180904 17:52:12.176"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:52:32.766" starttime="20180904 17:52:12.175"></status>
+</kw>
+<kw name="Validate git delete" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:32.769" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:52:34.179" starttime="20180904 17:52:32.768"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:34.180" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:52:34.462" starttime="20180904 17:52:34.179"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:34.463" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:52:37.706" starttime="20180904 17:52:34.462"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:52:47.708" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:52:47.708" starttime="20180904 17:52:37.707"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:47.709" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:52:47.866" starttime="20180904 17:52:47.709"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:52:52.867" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:52:52.868" starttime="20180904 17:52:47.867"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:52.869" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:52:54.769" starttime="20180904 17:52:52.868"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:52:54.770" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:53:02.833" starttime="20180904 17:52:54.770"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_repo_to_del}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:02.834" level="INFO">Clicking element 'xpath=//a[contains(text(),'RobotTest2')]'.</msg>
+<status status="PASS" endtime="20180904 17:53:04.924" starttime="20180904 17:53:02.833"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_setting}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:04.925" level="INFO">Clicking element 'xpath=//a[@class='btn plugin_git_admin_button']'.</msg>
+<status status="PASS" endtime="20180904 17:53:06.679" starttime="20180904 17:53:04.924"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_del}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:06.681" level="INFO">Clicking element 'xpath=//a[@title='Delete']'.</msg>
+<status status="PASS" endtime="20180904 17:53:09.422" starttime="20180904 17:53:06.680"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_final_del}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:09.423" level="INFO">Clicking element 'xpath=//input[@value='Delete this repository']'.</msg>
+<status status="PASS" endtime="20180904 17:53:11.175" starttime="20180904 17:53:09.422"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:53:13.176" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:53:13.177" starttime="20180904 17:53:11.175"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:53:13.177" starttime="20180904 17:52:32.767"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:13.179" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:53:14.590" starttime="20180904 17:53:13.178"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:53:14.590" starttime="20180904 17:53:13.178"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:53:14.659" starttime="20180904 17:53:14.591"></status>
+</kw>
+<doc>This test case objective to validate the
+deletion of an existing Git repo.</doc>
+<status status="PASS" endtime="20180904 17:53:14.659" critical="yes" starttime="20180904 17:52:12.173"></status>
+</test>
+<test id="s1-t7" name="Git clone:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:14.665" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:53:30.191" starttime="20180904 17:53:14.664"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:53:30.192" starttime="20180904 17:53:14.663"></status>
+</kw>
+<kw name="Validate Git clone">
+<msg timestamp="20180904 17:53:30.227" level="FAIL">No keyword with name 'Validate Git clone' found.</msg>
+<status status="FAIL" endtime="20180904 17:53:30.227" starttime="20180904 17:53:30.227"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:53:30.300" starttime="20180904 17:53:30.231"></status>
+</kw>
+<doc>This test case objective to validate the git cloning.</doc>
+<status status="FAIL" endtime="20180904 17:53:30.301" critical="yes" starttime="20180904 17:53:14.662">No keyword with name 'Validate Git clone' found.</status>
+</test>
+<test id="s1-t8" name="Git Serach:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:30.305" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:53:49.977" starttime="20180904 17:53:30.305"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:53:49.978" starttime="20180904 17:53:30.304"></status>
+</kw>
+<kw name="Validate git search" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:49.980" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:53:51.298" starttime="20180904 17:53:49.979"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:51.299" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:53:51.580" starttime="20180904 17:53:51.298"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:53:51.580" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:53:54.649" starttime="20180904 17:53:51.580"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:54:04.650" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:54:04.651" starttime="20180904 17:53:54.650"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:04.652" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:54:04.778" starttime="20180904 17:54:04.651"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180904 17:54:09.780" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180904 17:54:09.780" starttime="20180904 17:54:04.778"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${IVTP}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:09.781" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[2]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:54:11.362" starttime="20180904 17:54:09.781"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:11.363" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:54:19.156" starttime="20180904 17:54:11.362"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Ivt_git_repo}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:19.157" level="INFO">Clicking element 'xpath=//a[@href='/plugins/git/ivt/IVTREE_Demo']'.</msg>
+<status status="PASS" endtime="20180904 17:54:21.606" starttime="20180904 17:54:19.156"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${Git-search}</arg>
+<arg>${Git_search_input}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:21.607" level="INFO">Typing text '36' into text field 'xpath=//input[@name='s']'</msg>
+<status status="PASS" endtime="20180904 17:54:22.276" starttime="20180904 17:54:21.606"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:54:24.278" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:54:24.278" starttime="20180904 17:54:22.277"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:54:24.279" starttime="20180904 17:53:49.978"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:24.280" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:54:26.152" starttime="20180904 17:54:24.280"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:54:26.152" starttime="20180904 17:54:24.279"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:54:26.234" starttime="20180904 17:54:26.153"></status>
+</kw>
+<doc>This test case objective to validate the
+Git search functionality.</doc>
+<status status="PASS" endtime="20180904 17:54:26.235" critical="yes" starttime="20180904 17:53:30.302"></status>
+</test>
+<test id="s1-t9" name="Repository field:">
+<kw type="setup" name="Open uniclair to chrome" library="uniclair">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:26.247" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180904 17:54:46.625" starttime="20180904 17:54:26.244"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:54:46.625" starttime="20180904 17:54:26.243"></status>
+</kw>
+<kw name="Validate Repo fields" library="uniclair">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:46.627" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180904 17:54:48.252" starttime="20180904 17:54:46.626"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:48.253" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180904 17:54:48.526" starttime="20180904 17:54:48.253"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:48.527" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180904 17:54:53.601" starttime="20180904 17:54:48.527"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180904 17:54:54.602" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180904 17:54:54.602" starttime="20180904 17:54:53.601"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:54.603" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180904 17:54:54.746" starttime="20180904 17:54:54.603"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180904 17:54:55.747" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180904 17:54:55.747" starttime="20180904 17:54:54.746"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${IVTP}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:55.748" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[2]//a[1]'.</msg>
+<status status="PASS" endtime="20180904 17:54:57.282" starttime="20180904 17:54:55.747"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GIT}</arg>
+</arguments>
+<msg timestamp="20180904 17:54:57.283" level="INFO">Clicking element 'xpath=//a[@id='sidebar-plugin_git']'.</msg>
+<status status="PASS" endtime="20180904 17:55:04.156" starttime="20180904 17:54:57.282"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Ivt_git_repo}</arg>
+</arguments>
+<msg timestamp="20180904 17:55:04.157" level="INFO">Clicking element 'xpath=//a[@href='/plugins/git/ivt/IVTREE_Demo']'.</msg>
+<status status="PASS" endtime="20180904 17:55:06.518" starttime="20180904 17:55:04.156"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180904 17:55:07.519" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180904 17:55:07.519" starttime="20180904 17:55:06.518"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_shortlog}</arg>
+</arguments>
+<msg timestamp="20180904 17:55:07.520" level="INFO">Clicking element 'xpath=//*[@class='page_nav']//*[contains(text(),'shortlog')]'.</msg>
+<status status="PASS" endtime="20180904 17:55:09.146" starttime="20180904 17:55:07.520"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:55:11.148" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:55:11.148" starttime="20180904 17:55:09.146"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_log}</arg>
+</arguments>
+<msg timestamp="20180904 17:55:11.149" level="INFO">Clicking element 'xpath=//*[@class='page_nav']//*[contains(text(),'log')]'.</msg>
+<status status="PASS" endtime="20180904 17:55:13.893" starttime="20180904 17:55:11.148"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:55:15.894" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:55:15.894" starttime="20180904 17:55:13.893"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_commit}</arg>
+</arguments>
+<msg timestamp="20180904 17:55:15.895" level="INFO">Clicking element 'xpath=(//*[@class='page_nav']//*[contains(text(),'commit')])[1]'.</msg>
+<status status="PASS" endtime="20180904 17:55:18.110" starttime="20180904 17:55:15.895"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:55:28.111" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:55:28.111" starttime="20180904 17:55:18.110"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_commitdiff}</arg>
+</arguments>
+<msg timestamp="20180904 17:55:28.112" level="INFO">Clicking element 'xpath=//div[@class='page_nav']//a[@href='?p=IVTREE_Demo.git&amp;a=commitdiff&amp;h=b25c72cfa0464fc62a6733fe8acc4beb5ff20f69'][contains(text(),'commitdiff')]'.</msg>
+<status status="PASS" endtime="20180904 17:55:30.407" starttime="20180904 17:55:28.111"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180904 17:55:40.409" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180904 17:55:40.409" starttime="20180904 17:55:30.408"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Git_tree}</arg>
+</arguments>
+<msg timestamp="20180904 17:55:40.410" level="INFO">Clicking element 'xpath=//*[@class='page_nav']//*[contains(text(),'tree')]'.</msg>
+<status status="PASS" endtime="20180904 17:55:42.345" starttime="20180904 17:55:40.409"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180904 17:55:44.347" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180904 17:55:44.347" starttime="20180904 17:55:42.346"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:55:44.347" starttime="20180904 17:54:46.626"></status>
+</kw>
+<kw name="Logout" library="uniclair">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Logout}</arg>
+</arguments>
+<msg timestamp="20180904 17:55:44.350" level="INFO">Clicking button 'xpath=//button[@title='Logout']'.</msg>
+<status status="PASS" endtime="20180904 17:55:45.821" starttime="20180904 17:55:44.349"></status>
+</kw>
+<status status="PASS" endtime="20180904 17:55:45.822" starttime="20180904 17:55:44.348"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180904 17:55:45.893" starttime="20180904 17:55:45.822"></status>
+</kw>
+<doc>This test case objective to validate the repo fields.</doc>
+<status status="PASS" endtime="20180904 17:55:45.894" critical="yes" starttime="20180904 17:54:26.238"></status>
+</test>
+<doc>A test suite containing tests related to Uniclar Git Features.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" endtime="20180904 17:55:45.899" starttime="20180904 17:47:17.554"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="8">Critical Tests</stat>
+<stat fail="1" pass="8">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Git" pass="8">Git</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
