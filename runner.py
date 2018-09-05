@@ -54,7 +54,7 @@ complete_log_path=os.path.join(complete_dir_path,"Functional_log"+datetime.datet
 run(
 
       "/home/himanshu/uniclair_automation/resource/Git.robot",
-#      "/home/himanshu/uniclair_automation/resource/Tracker.robot",
+      "/home/himanshu/uniclair_automation/resource/Tracker.robot",
 #      "/home/himanshu/uniclair_automation/resource/Uniclair_login_logout.robot",
 
     report=complete_report_path,log=complete_log_path)
