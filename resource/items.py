@@ -8,7 +8,7 @@ import subprocess
 from subprocess import call
 #import xml.etree.ElementTree as ET
 #tree = ET.parse('items.xml')
-#root = tree.getroot()
+#root = tree.getroot++++()
 
 #from subprocess import call
 
@@ -30,6 +30,7 @@ complete_report_path= os.path.join(complete_dir_path,"Functional_"+datetime.date
 #Form complete path to store log report
 complete_log_path=os.path.join(complete_dir_path,"Functional_log"+datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+".html")
 
+"""
 print('Test Data:')
 count=0
 with open('Filelist.txt', 'r') as e:
@@ -44,6 +45,7 @@ with open('Filelist.txt', 'r') as e:
          call(['robot', '-t',t,q])
 
 """
+
 print('Test Data:')
 count=0
 with open('Uniclair_login_logout.txt', 'r') as f:
@@ -53,4 +55,4 @@ with open('Uniclair_login_logout.txt', 'r') as f:
      print (count)
      call(['robot', '-t',t,'Uniclair_login_logout.robot'])
 
-"""
+
