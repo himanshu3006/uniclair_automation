@@ -85,7 +85,7 @@ def run_robot(nightly='False', build_id=''):
         # start the suite
 
         run(
-            "resource/HomePage_IVtree.robot",
+            "/home/vagrant/uniclair_automation/resource/Uniclair_login_logout.robot",
             report=complete_report_path, log=complete_log_path)
     else:
         import subprocess
