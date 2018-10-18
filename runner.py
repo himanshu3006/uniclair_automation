@@ -90,7 +90,7 @@ def run_robot(nightly='False', build_id=''):
     else:
         import subprocess
         import os
-        run("resource/HomePage_IVtree.robot",
+        run("/home/vagrant/uniclair_automation/resource/Uniclair_login_logout.robot",
             report=complete_report_path, log=complete_log_path, output=complete_xml_path)
         # run(
         #     "resource/HomePage_IVtree.robot",
