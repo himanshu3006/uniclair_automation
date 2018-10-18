@@ -28,7 +28,7 @@ import urllib
 #import urllib2
 import telnetlib
 import types
-import commands
+#import commands
 import string
 import traceback
 import copy
